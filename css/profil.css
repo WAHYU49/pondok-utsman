@@ -1,0 +1,301 @@
+
+/* =========================
+   PAGE HERO
+========================= */
+.page-hero {
+    padding: 65px 0 75px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.breadcrumb a:hover {
+    color: var(--green-700);
+}
+
+.page-hero h1 {
+    max-width: 750px;
+    margin-bottom: 16px;
+    color: var(--green-900);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+}
+
+.page-hero p {
+    max-width: 650px;
+    color: var(--muted);
+}
+
+/* =========================
+   PROFILE INTRODUCTION
+========================= */
+.profile-intro {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.profile-visual {
+    min-height: 370px;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    border-radius: 18px;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 255, 255, 0.4),
+            transparent 40%
+        ),
+        linear-gradient(145deg, #dcebdd, #b8d1bd);
+}
+
+.profile-visual-inner {
+    width: 100%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(25, 75, 54, 0.18);
+    border-radius: 14px;
+    color: var(--green-900);
+}
+
+.profile-monogram {
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 22px;
+    border-radius: 24px;
+    background: var(--green-900);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.profile-visual-inner p {
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.profile-visual-inner small {
+    margin-top: 5px;
+}
+
+.profile-copy h2,
+.location-content h2 {
+    margin-bottom: 22px;
+    color: var(--green-900);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    line-height: 1.25;
+}
+
+.profile-copy > p {
+    margin-bottom: 16px;
+    color: var(--muted);
+}
+
+.content-note {
+    padding: 14px 16px;
+    border-left: 3px solid var(--green-700);
+    background: var(--cream);
+    font-size: 0.85rem;
+}
+
+/* =========================
+   VISION AND MISSION
+========================= */
+.vision-section {
+    background: var(--cream);
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.vision-card {
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--white);
+}
+
+.vision-icon {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: var(--green-100);
+    color: var(--green-900);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.vision-card h3 {
+    margin-bottom: 12px;
+    color: var(--green-900);
+    font-size: 1.3rem;
+}
+
+.vision-card p,
+.vision-card li {
+    color: var(--muted);
+}
+
+.vision-card ul {
+    padding-left: 20px;
+}
+
+.vision-card li {
+    padding: 5px 0;
+}
+
+/* =========================
+   VALUES
+========================= */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.value-card {
+    padding: 24px 20px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.value-number {
+    display: block;
+    margin-bottom: 22px;
+    color: var(--green-700);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.value-card h3 {
+    margin-bottom: 10px;
+    color: var(--green-900);
+    font-size: 1.05rem;
+}
+
+.value-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+/* =========================
+   LOCATIONS
+========================= */
+.location-section {
+    background: var(--cream);
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+    gap: 60px;
+}
+
+.location-content > div:first-child > p {
+    color: var(--muted);
+}
+
+.location-list {
+    display: grid;
+    gap: 16px;
+}
+
+.location-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.location-pin {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--green-100);
+    color: var(--green-900);
+    font-weight: 800;
+}
+
+.location-card h3 {
+    margin-bottom: 5px;
+    color: var(--green-900);
+}
+
+.location-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+    .profile-intro,
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .profile-visual {
+        min-height: 300px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .page-hero {
+        padding: 45px 0 55px;
+    }
+
+    .vision-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-card {
+        padding: 24px;
+    }
+
+    .profile-visual {
+        min-height: 260px;
+        padding: 18px;
+    }
+
+    .profile-visual-inner {
+        min-height: 230px;
+    }
+}
+
