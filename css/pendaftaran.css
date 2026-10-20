@@ -1,0 +1,118 @@
+
+.registration-hero {
+    padding: 80px 0;
+    background: var(--green-900);
+    color: var(--white);
+}
+
+.registration-hero h1 {
+    max-width: 800px;
+    margin: 12px 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.registration-hero p {
+    max-width: 700px;
+    line-height: 1.8;
+}
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.registration-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.registration-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: var(--green-100);
+    color: var(--green-900);
+    font-weight: 700;
+}
+
+.registration-location {
+    color: var(--green-700);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.registration-card h3 {
+    margin: 12px 0;
+    color: var(--green-900);
+    font-size: 1.35rem;
+}
+
+.registration-card p {
+    flex-grow: 1;
+    margin-bottom: 24px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.registration-card .btn {
+    margin-top: auto;
+}
+
+.registration-note {
+    margin-top: 45px;
+    padding: 30px;
+    border-radius: 16px;
+    background: var(--green-100);
+}
+
+.registration-note h3 {
+    margin-top: 0;
+    color: var(--green-900);
+}
+
+.registration-note p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.registration-text-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--green-700);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.registration-text-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .registration-hero {
+        padding: 55px 0;
+    }
+
+    .registration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-card {
+        padding: 25px;
+    }
+
+    .registration-note {
+        padding: 24px;
+    }
+}

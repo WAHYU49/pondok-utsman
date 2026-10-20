@@ -1,117 +1,299 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program - Pondok Utsman</title>
+
+    <meta name="description" content="Informasi program pendidikan Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA), meliputi ilmu dan adab Islami, Al-Qur'an dan Hadis, kewirausahaan, kepemimpinan, serta teknologi digital.">
+
+    <meta name="theme-color" content="#123b2c">
+
+    <title>Program Pendidikan | Pondok Utsman PPM-UBA</title>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/program.css">
     <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
+<!-- HEADER -->
+<header class="header">
     <nav class="navbar container">
-        <a href="../index.html" class="brand">
+
+        <a href="../index.html" class="brand"
+           aria-label="Pondok Utsman - Beranda">
             <span class="brand-icon">
-                <img src="../images/logo1.jpg" alt="Logo Pondok Utsman">
+                <img src="../images/Logo_utsman.png"
+                     alt="Logo Pondok Utsman">
             </span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle"
-            aria-label="Buka menu navigasi"
-            aria-expanded="false">
-            ☰
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="../index.html">Beranda</a>
-            <a href="profil.html">Profil</a>
-            <a href="program.html" class="active">Program</a>
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="donasi.html">Donasi</a>
-            <a href="kontak.html">Kontak</a>
-            <a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a>
-        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a class="active" href="program.html">Program</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="donasi.html">Donasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li>
+                <a class="btn btn-primary nav-cta"
+                   href="pendaftaran.html">Pendaftaran</a>
+            </li>
+        </ul>
+
     </nav>
 </header>
 
 <main>
+
+    <!-- HERO PROGRAM -->
     <section class="program-hero">
         <div class="container">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span>/</span>
+                <span aria-current="page">Program</span>
+            </nav>
+
             <p class="section-label">PROGRAM PENDIDIKAN</p>
+
             <h1>Program Pondok Utsman</h1>
+
             <p>
-                Mengenal program pendidikan dan pembinaan
-                untuk mendukung perkembangan santri.
+                Mengembangkan pendidikan Islam yang memadukan
+                ilmu, adab, Al-Qur'an dan Hadis, kewirausahaan,
+                kepemimpinan, serta teknologi digital.
             </p>
+
         </div>
     </section>
 
+    <!-- PENGANTAR PROGRAM -->
     <section class="section">
         <div class="container">
+
             <div class="section-heading">
-                <p class="section-label">PROGRAM KAMI</p>
-                <h2>Pendidikan dan Pembinaan Santri</h2>
+                <span class="section-label">PENDIDIKAN DAN PEMBINAAN</span>
+
+                <h2>Empat Bidang Utama PPM-UBA</h2>
+
                 <p>
-                    Berikut contoh kategori program yang dapat
-                    disesuaikan dengan program resmi Pondok Utsman.
+                    Pondok Pesantren Masjid Utsman Bin Affan
+                    berikhtiar mencetak Dai Technopreneur yang
+                    mampu menghadapi perubahan zaman dan menjadi
+                    agen perubahan peradaban.
                 </p>
             </div>
 
             <div class="program-detail-grid">
+
+                <!-- PROGRAM 1 -->
                 <article class="program-detail-card">
                     <div class="program-number">01</div>
-                    <h3>Pembinaan Adab dan Akhlak</h3>
+
+                    <h3>Ilmu, Adab &amp; Akhlaq Islami</h3>
+
                     <p>
-                        Pembinaan karakter dan kebiasaan positif
+                        Mendukung pengembangan ilmu pengetahuan
+                        sekaligus pembinaan adab dan akhlak Islami
+                        sebagai bagian penting dalam kehidupan
+                        dan pembentukan karakter.
+                    </p>
+                </article>
+
+                <!-- PROGRAM 2 -->
+                <article class="program-detail-card">
+                    <div class="program-number">02</div>
+
+                    <h3>Al-Qur'an &amp; Hadis</h3>
+
+                    <p>
+                        Mendukung pembelajaran Al-Qur'an dan Hadis
+                        sebagai landasan pendidikan keislaman
+                        serta pengamalan nilai-nilai Islam
                         dalam kehidupan sehari-hari.
                     </p>
                 </article>
 
-                <article class="program-detail-card">
-                    <div class="program-number">02</div>
-                    <h3>Pendidikan Al-Qur'an</h3>
-                    <p>
-                        Kegiatan pembelajaran Al-Qur'an yang
-                        disesuaikan dengan kurikulum pondok.
-                    </p>
-                </article>
-
+                <!-- PROGRAM 3 -->
                 <article class="program-detail-card">
                     <div class="program-number">03</div>
-                    <h3>Pengembangan Keterampilan</h3>
+
+                    <h3>Entrepreneurship &amp; Leadership</h3>
+
                     <p>
-                        Pengembangan kemampuan dan kemandirian
-                        santri sesuai program yang tersedia.
+                        Mendorong pengembangan jiwa kewirausahaan,
+                        kemandirian, tanggung jawab, dan
+                        kepemimpinan untuk mendukung kontribusi
+                        positif bagi masyarakat.
+                    </p>
+                </article>
+
+                <!-- PROGRAM 4 -->
+                <article class="program-detail-card">
+                    <div class="program-number">04</div>
+
+                    <h3>IT dan Digital</h3>
+
+                    <p>
+                        Mengenalkan teknologi informasi dan
+                        keterampilan digital sebagai bagian dari
+                        pengembangan potensi serta kesiapan
+                        menghadapi perkembangan zaman.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TUJUAN PENDIDIKAN -->
+    <section class="section program-purpose">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">TUJUAN PENDIDIKAN</span>
+
+                <h2>Membangun Generasi yang Bermanfaat</h2>
+
+                <p>
+                    Pendidikan di Pondok Utsman diarahkan untuk
+                    mendukung pembentukan generasi yang memiliki
+                    dasar keislaman, karakter, kemandirian,
+                    serta keterampilan yang relevan dengan
+                    perkembangan zaman.
+                </p>
+            </div>
+
+            <div class="program-detail-grid">
+
+                <article class="program-detail-card">
+                    <h3>Berlandaskan Nilai Islam</h3>
+                    <p>
+                        Mengutamakan pembinaan ilmu, adab,
+                        akhlak, dan nilai-nilai keislaman.
                     </p>
                 </article>
 
                 <article class="program-detail-card">
-                    <div class="program-number">04</div>
-                    <h3>Kegiatan Sosial</h3>
+                    <h3>Mandiri dan Berjiwa Pemimpin</h3>
                     <p>
-                        Kegiatan kebersamaan dan kepedulian sosial
-                        sesuai agenda resmi pondok.
+                        Mendorong pengembangan tanggung jawab,
+                        kepemimpinan, dan semangat kewirausahaan.
                     </p>
                 </article>
+
+                <article class="program-detail-card">
+                    <h3>Adaptif terhadap Teknologi</h3>
+                    <p>
+                        Mendukung pengenalan teknologi informasi
+                        dan keterampilan digital.
+                    </p>
+                </article>
+
+                <article class="program-detail-card">
+                    <h3>Bermanfaat bagi Umat</h3>
+                    <p>
+                        Mendorong kontribusi positif melalui
+                        pendidikan, pengembangan potensi,
+                        dan pemberdayaan masyarakat.
+                    </p>
+                </article>
+
             </div>
 
             <div class="program-cta">
                 <h2>Ingin Mengenal Pondok Utsman Lebih Lanjut?</h2>
-                <p>Silakan hubungi pengelola untuk mendapatkan informasi resmi.</p>
+
+                <p>
+                    Pelajari profil lembaga atau hubungi pengelola
+                    untuk mendapatkan informasi program dan
+                    pendaftaran yang tersedia.
+                </p>
+
+                <a href="profil.html" class="btn btn-secondary">
+                    Kenali Profil Pondok
+                </a>
+
                 <a href="kontak.html" class="btn btn-primary">
                     Hubungi Kami
                 </a>
             </div>
+
         </div>
     </section>
+
 </main>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; <span id="currentYear"></span> Pondok Utsman.</p>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <a href="../index.html" class="brand footer-brand">
+                <span class="brand-icon">
+                    <img src="../images/images.jpg"
+                         alt="Logo footer Pondok Utsman">
+                </span>
+
+                <span>
+                    <strong>PONDOK UTSMAN</strong>
+                    <small>PPM-UBA</small>
+                </span>
+            </a>
+
+            <p class="footer-description">
+                Pondok Pesantren Masjid Utsman Bin Affan
+                berikhtiar membangun peradaban Islam melalui
+                pendidikan, pembinaan adab, kepemimpinan,
+                kewirausahaan, dan teknologi digital.
+            </p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+            <a href="../index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="program.html">Program</a>
+            <a href="kegiatan.html">Kegiatan</a>
+        </div>
+
+        <div>
+            <h3>Informasi</h3>
+            <a href="pendaftaran.html">Pendaftaran</a>
+            <a href="donasi.html">Donasi</a>
+            <a href="kontak.html">Kontak</a>
+            <p>
+                WhatsApp:
+                <a href="https://api.whatsapp.com/send?phone=6281216805549"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    +62 812-1680-5549
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Pondok Utsman. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
     </div>
 </footer>
 

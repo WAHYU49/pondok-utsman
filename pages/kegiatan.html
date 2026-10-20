@@ -1,138 +1,244 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Dokumentasi kegiatan Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA), mulai dari kegiatan Al-Qur'an, pembinaan santri, hingga kegiatan sosial.">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Kegiatan - Pondok Utsman</title>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/kegiatan.css">
+
     <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
+<header class="header">
     <nav class="navbar container">
-        <a href="../index.html" class="brand">
+        <a href="../index.html" class="brand" aria-label="Pondok Utsman - Beranda">
             <span class="brand-icon">
-                <img src="../images/logo1.jpg" alt="Logo Pondok Utsman">
+                <img src="../images/Logo_utsman.png" alt="Logo Pondok Utsman">
             </span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle"
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
             aria-label="Buka menu navigasi"
+            aria-controls="navMenu"
             aria-expanded="false">
             ☰
         </button>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="../index.html">Beranda</a>
-            <a href="profil.html">Profil</a>
-            <a href="program.html">Program</a>
-            <a href="kegiatan.html" class="active">Kegiatan</a>
-            <a href="donasi.html">Donasi</a>
-            <a href="kontak.html">Kontak</a>
-            <a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a>
-        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kegiatan.html" class="active" aria-current="page">Kegiatan</a></li>
+            <li><a href="donasi.html">Donasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a></li>
+        </ul>
     </nav>
 </header>
 
 <main>
+    <!-- Hero Kegiatan -->
     <section class="activity-hero">
         <div class="container">
-            <p class="section-label">DOKUMENTASI PONDOK</p>
+            <p class="section-label">KEGIATAN PPM-UBA</p>
+
             <h1>Kegiatan Pondok Utsman</h1>
+
             <p>
-                Dokumentasi aktivitas dan kebersamaan dalam
-                lingkungan Pondok Utsman.
+                Mengenal berbagai kegiatan pembinaan santri,
+                pengembangan keislaman, pendidikan Al-Qur'an,
+                dan kebersamaan di lingkungan Pondok Utsman.
             </p>
         </div>
     </section>
 
+    <!-- Galeri Kegiatan -->
     <section class="section">
         <div class="container">
+
             <div class="section-heading">
                 <p class="section-label">GALERI KEGIATAN</p>
-                <h2>Dokumentasi Kegiatan Pondok</h2>
+
+                <h2>Aktivitas dan Kebersamaan Santri</h2>
+
                 <p>
-                    Lihat berbagai kegiatan yang dilaksanakan
-                    oleh Pondok Utsman.
+                    Berbagai kegiatan menjadi bagian dari upaya
+                    membentuk santri yang berilmu, berakhlak,
+                    memiliki jiwa kepemimpinan, dan siap berkontribusi
+                    bagi masyarakat.
                 </p>
             </div>
 
             <div class="activity-gallery">
 
+                <!-- Kegiatan 1 -->
                 <article class="gallery-card">
                     <div class="gallery-image">
                         <img
                             src="../images/kegiatan/kegiatan1.jpg"
-                            alt="Dokumentasi kegiatan pertama Pondok Utsman"
+                            alt="Dokumentasi kegiatan pendidikan dan pembinaan Pondok Utsman"
                             loading="lazy">
                     </div>
+
                     <div class="gallery-content">
-                        <span class="gallery-category">Dokumentasi</span>
-                        <h3>Kegiatan Pondok</h3>
+                        <span class="gallery-category">Pendidikan Islam</span>
+
+                        <h3>Kegiatan Mengaji dan Pembinaan Santri</h3>
+
                         <p>
-                            Dokumentasi aktivitas santri di lingkungan pondok.
+                            Kegiatan pendidikan keislaman untuk mendukung
+                            pembelajaran Al-Qur'an, pembentukan adab,
+                            dan penguatan akhlak santri.
                         </p>
                     </div>
                 </article>
 
+                <!-- Kegiatan 2 -->
                 <article class="gallery-card">
                     <div class="gallery-image">
                         <img
                             src="../images/kegiatan/kegiatan2.jpg"
-                            alt="Dokumentasi kegiatan kedua Pondok Utsman"
+                            alt="Dokumentasi kegiatan pembinaan dan kebersamaan Pondok Utsman"
                             loading="lazy">
                     </div>
+
                     <div class="gallery-content">
-                        <span class="gallery-category">Dokumentasi</span>
-                        <h3>Kegiatan Pembinaan</h3>
+                        <span class="gallery-category">Pembinaan Santri</span>
+
+                        <h3>Haflah Santri Tahfidz</h3>
+
                         <p>
-                            Dokumentasi kegiatan pembinaan dan kebersamaan.
+                            Kegiatan yang berkaitan dengan pembinaan
+                            dan apresiasi proses belajar santri
+                            dalam menghafal serta mempelajari Al-Qur'an.
                         </p>
                     </div>
                 </article>
 
+                <!-- Kegiatan 3 -->
                 <article class="gallery-card">
                     <div class="gallery-image">
                         <img
                             src="../images/kegiatan/kegiatan3.jpg"
-                            alt="Dokumentasi kegiatan ketiga Pondok Utsman"
+                            alt="Dokumentasi kegiatan kebersamaan santri Pondok Utsman"
                             loading="lazy">
                     </div>
+
                     <div class="gallery-content">
-                        <span class="gallery-category">Dokumentasi</span>
-                        <h3>Kegiatan Bersama</h3>
+                        <span class="gallery-category">Kebersamaan</span>
+
+                        <h3>Tadabur Alam dan Rihlah Santri</h3>
+
                         <p>
-                            Dokumentasi kegiatan bersama di lingkungan pondok.
+                            Kegiatan di luar lingkungan pembelajaran
+                            yang dapat menjadi sarana mempererat
+                            kebersamaan, belajar dari lingkungan,
+                            dan membangun pengalaman santri.
                         </p>
                     </div>
                 </article>
 
             </div>
 
+            <!-- Informasi Kegiatan -->
             <div class="activity-note">
                 <p>
-                    Dokumentasi kegiatan akan diperbarui sesuai
-                    foto dan informasi resmi dari pengelola pondok.
+                    Dokumentasi kegiatan akan diperbarui secara berkala
+                    sesuai foto dan informasi resmi dari pengelola
+                    Pondok Utsman.
                 </p>
             </div>
 
+            <!-- CTA -->
             <div class="activity-cta">
-                <h2>Ingin Mengetahui Informasi Lebih Lanjut?</h2>
-                <p>Hubungi pengelola Pondok Utsman untuk informasi kegiatan.</p>
+                <h2>Ingin Mengetahui Informasi Kegiatan?</h2>
+
+                <p>
+                    Hubungi pengelola Pondok Utsman untuk memperoleh
+                    informasi lebih lanjut mengenai kegiatan dan
+                    program pendidikan yang tersedia.
+                </p>
+
                 <a href="kontak.html" class="btn btn-primary">
                     Hubungi Kami
                 </a>
             </div>
+
         </div>
     </section>
 </main>
 
-<footer class="site-footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="container">
-        <p>&copy; <span id="currentYear"></span> Pondok Utsman.</p>
+        <div class="footer-grid">
+
+            <div>
+                <a href="../index.html" class="brand footer-brand" aria-label="Pondok Utsman - Beranda">
+                    <span class="brand-icon">
+                        <img src="../images/images.jpg"
+                             alt="Logo footer Pondok Utsman"
+                             loading="lazy">
+                    </span>
+                    <span>
+                        <strong>PONDOK UTSMAN</strong>
+                        <small>PPM-UBA</small>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA)
+                    berikhtiar membangun peradaban Islam melalui
+                    pendidikan, adab, kepemimpinan, kewirausahaan,
+                    dan teknologi digital.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="donasi.html">Donasi</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+                <ul>
+                    <li>
+                        <a href="pendaftaran.html">Pendaftaran Santri</a>
+                    </li>
+                    <li>
+                        <a href="donasi.html">Informasi Donasi</a>
+                    </li>
+                    <li>
+                        <a href="kontak.html">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Pondok Utsman. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
     </div>
 </footer>
 
