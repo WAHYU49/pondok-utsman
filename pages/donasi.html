@@ -1,120 +1,224 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Informasi donasi dan kontribusi untuk mendukung kegiatan pendidikan serta pengembangan Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA).">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Donasi - Pondok Utsman</title>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/donasi.css">
+
     <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
+<header class="header">
     <nav class="navbar container">
-        <a href="../index.html" class="brand">
+        <a href="../index.html" class="brand" aria-label="Pondok Utsman - Beranda">
             <span class="brand-icon">
-                <img src="../images/logo1.jpg" alt="Logo Pondok Utsman">
+                <img src="../images/Logo_utsman.png" alt="Logo Pondok Utsman">
             </span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle"
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
             aria-label="Buka menu navigasi"
+            aria-controls="navMenu"
             aria-expanded="false">
             ☰
         </button>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="../index.html">Beranda</a>
-            <a href="profil.html">Profil</a>
-            <a href="program.html">Program</a>
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="donasi.html" class="active">Donasi</a>
-            <a href="kontak.html">Kontak</a>
-            <a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a>
-        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="donasi.html" class="active" aria-current="page">Donasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a></li>
+        </ul>
     </nav>
 </header>
 
 <main>
+
+    <!-- Hero Donasi -->
     <section class="donation-hero">
         <div class="container">
             <p class="section-label">KEPEDULIAN DAN KEMANFAATAN</p>
-            <h1>Dukung Kegiatan Pondok Utsman</h1>
+
+            <h1>Bersama Membangun Peradaban Islam</h1>
+
             <p>
-                Dukungan Anda dapat membantu menunjang kegiatan
-                pendidikan dan kebutuhan pondok. Hubungi pengelola
-                untuk mengetahui informasi donasi yang resmi.
+                Mari berkontribusi bersama Pondok Pesantren Masjid
+                Utsman Bin Affan (PPM-UBA) untuk mendukung pendidikan,
+                pembinaan santri, dan kegiatan yang membawa manfaat
+                bagi masyarakat.
             </p>
-            <a href="kontak.html" class="btn btn-light">
-                Hubungi Pengelola
+
+            <a
+                href="https://api.whatsapp.com/send?phone=6281216805549&text=Assalamualaikum%20Admin%2C%20bagaimana%20cara%20berkontribusi%20membangun%20bersama%20PPM-UBA%3F%20Mohon%20dibantu%20informasinya.%20Terima%20kasih."
+                class="btn btn-light"
+                target="_blank"
+                rel="noopener noreferrer">
+                Tanya Cara Berdonasi
             </a>
         </div>
     </section>
 
+    <!-- Pilihan Dukungan -->
     <section class="section">
         <div class="container">
+
             <div class="section-heading">
                 <p class="section-label">SALURKAN DUKUNGAN</p>
-                <h2>Bersama Mendukung Kegiatan Pondok</h2>
+
+                <h2>Kontribusi untuk Kegiatan Pondok</h2>
+
                 <p>
-                    Silakan konfirmasi kepada pengelola mengenai
-                    kebutuhan, tujuan, dan metode donasi yang tersedia.
+                    Dukungan dapat dibicarakan bersama pengelola
+                    sesuai program dan kebutuhan Pondok Utsman.
+                    Silakan hubungi pengelola untuk memperoleh
+                    informasi resmi sebelum menyalurkan donasi.
                 </p>
             </div>
 
             <div class="donation-grid">
+
                 <article class="donation-card">
                     <div class="donation-icon">01</div>
+
                     <h3>Dukungan Pendidikan</h3>
+
                     <p>
-                        Dukungan untuk menunjang kegiatan pendidikan
-                        dan pembinaan santri sesuai kebutuhan pondok.
+                        Berkontribusi dalam mendukung proses pendidikan,
+                        pembelajaran Al-Qur'an, serta pembinaan adab
+                        dan akhlak santri.
                     </p>
                 </article>
 
                 <article class="donation-card">
                     <div class="donation-icon">02</div>
-                    <h3>Kebutuhan Operasional</h3>
+
+                    <h3>Pengembangan Pondok</h3>
+
                     <p>
-                        Bantuan untuk kebutuhan operasional yang
-                        telah dikonfirmasi oleh pengelola pondok.
+                        Dukungan untuk pengembangan sarana dan kegiatan
+                        pondok sesuai kebutuhan yang telah dikonfirmasi
+                        oleh pengelola.
                     </p>
                 </article>
 
                 <article class="donation-card">
                     <div class="donation-icon">03</div>
-                    <h3>Dukungan Kegiatan</h3>
+
+                    <h3>Kegiatan Sosial</h3>
+
                     <p>
-                        Dukungan untuk kegiatan pondok berdasarkan
-                        program dan kebutuhan yang sedang berjalan.
+                        Mendukung kegiatan sosial dan program
+                        kemasyarakatan yang dilaksanakan Pondok Utsman
+                        berdasarkan informasi resmi.
                     </p>
                 </article>
+
             </div>
 
+            <!-- Informasi Donasi -->
             <div class="donation-info">
                 <div>
                     <p class="section-label">INFORMASI DONASI</p>
-                    <h2>Ingin Menyalurkan Donasi?</h2>
+
+                    <h2>Ingin Berkontribusi Bersama PPM-UBA?</h2>
+
                     <p>
-                        Silakan hubungi pengelola Pondok Utsman untuk
-                        memperoleh informasi rekening atau metode
-                        pembayaran resmi serta konfirmasi donasi.
+                        Hubungi pengelola Pondok Utsman untuk
+                        mendapatkan informasi mengenai kebutuhan
+                        donasi, metode pembayaran resmi, serta
+                        tata cara konfirmasi donasi.
                     </p>
                 </div>
 
-                <a href="kontak.html" class="btn btn-primary">
-                    Informasi Donasi
+                <a
+                    href="https://api.whatsapp.com/send?phone=6281216805549&text=Assalamualaikum%20Admin%2C%20saya%20ingin%20mengetahui%20informasi%20donasi%20untuk%20PPM-UBA.%20Mohon%20dibantu%20informasinya.%20Terima%20kasih."
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Hubungi WhatsApp
                 </a>
             </div>
+
         </div>
     </section>
+
 </main>
 
-<footer class="site-footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="container">
-        <p>&copy; <span id="currentYear"></span> Pondok Utsman.</p>
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a href="../index.html" aria-label="Pondok Utsman - Beranda">
+                    <span class="brand-icon">
+                        <img
+                            src="../images/images.jpg"
+                            alt="Pondok Utsman"
+                            loading="lazy">
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA)
+                    berikhtiar membangun peradaban Islam melalui
+                    pendidikan, adab, kepemimpinan, kewirausahaan,
+                    dan teknologi digital.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="donasi.html">Donasi</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="pendaftaran.html">Pendaftaran Santri</a></li>
+                    <li><a href="kontak.html">Hubungi Kami</a></li>
+                </ul>
+
+                <p>
+                    WhatsApp:
+                    <a
+                        href="https://wa.me/6281216805549"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        +62 812-1680-5549
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Pondok Utsman. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
     </div>
 </footer>
 

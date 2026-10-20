@@ -1,95 +1,141 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informasi kontak dan lokasi Pondok Pesantren Masjid Utsman Bin Affan.">
+
+    <meta
+        name="description"
+        content="Informasi kontak, alamat kantor, dan lokasi Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA).">
+
+    <meta name="theme-color" content="#ffffff">
+
     <title>Kontak - Pondok Utsman</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/kontak.css">
+
     <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
+<!-- Navbar -->
+<header class="header">
     <nav class="navbar container">
-        <a href="../index.html" class="brand">
+
+        <a
+            href="../index.html"
+            class="brand"
+            aria-label="Pondok Utsman - Beranda">
             <span class="brand-icon">
-                <img src="../images/logo1.jpg" alt="Logo Pondok Utsman">
+                <img
+                    src="../images/Logo_utsman.png"
+                    alt="Logo Pondok Utsman">
             </span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle"
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
             aria-label="Buka menu navigasi"
+            aria-controls="navMenu"
             aria-expanded="false">
             ☰
         </button>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="../index.html">Beranda</a>
-            <a href="profil.html">Profil</a>
-            <a href="program.html">Program</a>
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="donasi.html">Donasi</a>
-            <a href="kontak.html" class="active">Kontak</a>
-            <a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a>
-        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="donasi.html">Donasi</a></li>
+            <li>
+                <a
+                    href="kontak.html"
+                    class="active"
+                    aria-current="page">
+                    Kontak
+                </a>
+            </li>
+            <li>
+                <a href="pendaftaran.html" class="btn btn-primary">
+                    Pendaftaran
+                </a>
+            </li>
+        </ul>
+
     </nav>
 </header>
 
 <main>
+
+    <!-- Hero Kontak -->
     <section class="contact-hero">
         <div class="container">
             <p class="section-label">HUBUNGI KAMI</p>
+
             <h1>Kontak Pondok Utsman</h1>
+
             <p>
                 Hubungi pengelola Pondok Pesantren Masjid
-                Utsman Bin Affan untuk memperoleh informasi
-                mengenai program, kegiatan, pendaftaran, dan donasi.
+                Utsman Bin Affan (PPM-UBA) untuk memperoleh
+                informasi mengenai program pendidikan, kegiatan,
+                pendaftaran santri, dan donasi.
             </p>
         </div>
     </section>
 
+    <!-- Informasi Kontak -->
     <section class="section">
         <div class="container">
 
             <div class="section-heading">
                 <p class="section-label">INFORMASI KONTAK</p>
+
                 <h2>Kami Siap Membantu Anda</h2>
+
                 <p>
-                    Silakan gunakan informasi kontak berikut
-                    untuk menghubungi pengelola pondok.
+                    Silakan gunakan informasi berikut untuk
+                    menghubungi pengelola Pondok Utsman.
                 </p>
             </div>
 
             <div class="contact-grid">
 
+                <!-- WhatsApp -->
                 <article class="contact-card">
-                    <div class="contact-icon">☎</div>
+                    <div class="contact-icon" aria-hidden="true">☎</div>
+
                     <h3>Telepon / WhatsApp</h3>
+
                     <p>+62 812-1680-5549</p>
+
                     <a
                         class="btn btn-primary"
-                        href="https://api.whatsapp.com/send?phone=6281216805549"
+                        href="https://wa.me/6281216805549"
                         target="_blank"
                         rel="noopener noreferrer">
                         Hubungi WhatsApp
                     </a>
                 </article>
 
+                <!-- Alamat Kantor -->
                 <article class="contact-card">
-                    <div class="contact-icon">⌖</div>
+                    <div class="contact-icon" aria-hidden="true">⌖</div>
+
                     <h3>Alamat Kantor</h3>
+
                     <p>
                         Jl. Candi Waringin No. 04,
                         Mojolangu, Kecamatan Lowokwaru,
                         Kota Malang, Jawa Timur 65142.
                     </p>
+
                     <a
                         class="contact-link"
-                        href="https://www.google.com/maps/search/?api=1&query=Jl.+Candi+Waringin+No.+04+Mojolangu+Lowokwaru+Malang"
+                        href="https://www.google.com/maps/search/?api=1&query=Jl.+Candi+Waringin+No.+04%2C+Mojolangu%2C+Lowokwaru%2C+Kota+Malang%2C+Jawa+Timur+65142"
                         target="_blank"
                         rel="noopener noreferrer">
                         Lihat di Google Maps →
@@ -98,40 +144,72 @@
 
             </div>
 
+            <!-- Lokasi Pesantren -->
             <div class="location-section">
+
                 <div class="section-heading">
                     <p class="section-label">LOKASI PESANTREN</p>
+
                     <h2>Lokasi Pondok Utsman</h2>
+
+                    <p>
+                        Informasi lokasi unit Pondok Utsman
+                        di Malang dan Lampung.
+                    </p>
                 </div>
 
                 <div class="location-grid">
+
                     <article class="location-card">
                         <h3>PPM-UBA 1 — Malang</h3>
+
                         <p>
                             Perum Griya Shanta Blok L 126,
                             Kota Malang, Jawa Timur.
                         </p>
+
+                        <a
+                            class="contact-link"
+                            href="https://www.google.com/maps/search/?api=1&query=Perum+Griya+Shanta+Blok+L+126+Malang"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Lihat lokasi →
+                        </a>
                     </article>
 
                     <article class="location-card">
                         <h3>PPM-UBA 2 — Lampung</h3>
+
                         <p>
                             Desa Liman Benawi, Kecamatan Trimurjo,
                             Kabupaten Lampung Tengah, Lampung.
                         </p>
+
+                        <a
+                            class="contact-link"
+                            href="https://www.google.com/maps/search/?api=1&query=Desa+Liman+Benawi+Trimurjo+Lampung+Tengah"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Lihat lokasi →
+                        </a>
                     </article>
+
                 </div>
             </div>
 
+            <!-- Call to Action -->
             <div class="contact-cta">
                 <h2>Ingin Bergabung atau Berdonasi?</h2>
+
                 <p>
                     Hubungi pengelola untuk mendapatkan informasi
-                    lebih lanjut mengenai pendaftaran santri
-                    dan dukungan untuk kegiatan pondok.
+                    lebih lanjut mengenai pendaftaran santri,
+                    program pendidikan, dan cara berkontribusi
+                    bersama Pondok Utsman.
                 </p>
+
                 <a
-                    href="https://api.whatsapp.com/send?phone=6281216805549&text=Assalamualaikum%20Admin%2C%20saya%20ingin%20mendapatkan%20informasi%20Pondok%20Utsman."
+                    href="https://wa.me/6281216805549?text=Assalamualaikum%2C%20saya%20ingin%20mendapatkan%20informasi%20mengenai%20Pondok%20Utsman."
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn btn-primary">
@@ -141,14 +219,84 @@
 
         </div>
     </section>
+
 </main>
 
-<footer class="site-footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="container">
-        <p>
-            &copy; <span id="currentYear"></span>
-            Pondok Pesantren Masjid Utsman Bin Affan.
-        </p>
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a
+                    href="../index.html"
+                    aria-label="Pondok Utsman - Beranda">
+                    <span class="brand-icon">
+                        <img
+                            src="../images/images.jpg"
+                            alt="Logo Pondok Utsman"
+                            loading="lazy">
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA)
+                    berikhtiar membangun peradaban Islam melalui
+                    pendidikan, adab, kepemimpinan, kewirausahaan,
+                    dan teknologi digital.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="donasi.html">Donasi</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+
+                <ul>
+                    <li>
+                        <a href="pendaftaran.html">
+                            Pendaftaran Santri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donasi.html">
+                            Informasi Donasi
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    WhatsApp:
+                    <a
+                        href="https://wa.me/6281216805549"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        +62 812-1680-5549
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Pondok Utsman. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
+
     </div>
 </footer>
 
