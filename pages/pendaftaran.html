@@ -1,73 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informasi pendaftaran santri Pondok Pesantren Masjid Utsman Bin Affan di Malang dan Lampung.">
+
+    <meta
+        name="description"
+        content="Informasi pendaftaran santri Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA) di Malang dan Lampung.">
+
+    <meta name="theme-color" content="#ffffff">
+
     <title>Pendaftaran Santri - Pondok Utsman</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pendaftaran.css">
+
     <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
+<!-- Navbar -->
+<header class="header">
     <nav class="navbar container">
-        <a href="../index.html" class="brand">
+
+        <a
+            href="../index.html"
+            class="brand"
+            aria-label="Pondok Utsman - Beranda">
             <span class="brand-icon">
-                <img src="../images/logo1.jpg" alt="Logo Pondok Utsman">
+                <img
+                    src="../images/Logo_utsman.png"
+                    alt="Logo Pondok Utsman">
             </span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle"
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
             aria-label="Buka menu navigasi"
+            aria-controls="navMenu"
             aria-expanded="false">
             ☰
         </button>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="../index.html">Beranda</a>
-            <a href="profil.html">Profil</a>
-            <a href="program.html">Program</a>
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="donasi.html">Donasi</a>
-            <a href="kontak.html">Kontak</a>
-            <a href="pendaftaran.html" class="btn btn-primary active">
-                Pendaftaran
-            </a>
-        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="donasi.html">Donasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li>
+                <a
+                    href="pendaftaran.html"
+                    class="btn btn-primary active"
+                    aria-current="page">
+                    Pendaftaran
+                </a>
+            </li>
+        </ul>
+
     </nav>
 </header>
 
 <main>
+
+    <!-- Hero Pendaftaran -->
     <section class="registration-hero">
         <div class="container">
             <p class="section-label">PENERIMAAN SANTRI</p>
+
             <h1>Pendaftaran Santri Pondok Utsman</h1>
+
             <p>
                 Dapatkan informasi pendaftaran santri Pondok
-                Pesantren Masjid Utsman Bin Affan. Pilih lokasi
-                pondok untuk melanjutkan proses pendaftaran.
+                Pesantren Masjid Utsman Bin Affan (PPM-UBA).
+                Pilih lokasi Malang atau Lampung untuk
+                melanjutkan proses pendaftaran.
             </p>
         </div>
     </section>
 
+    <!-- Pilihan Lokasi -->
     <section class="section">
         <div class="container">
 
             <div class="section-heading">
                 <p class="section-label">PILIH LOKASI</p>
+
                 <h2>Lokasi Pendaftaran Santri</h2>
+
                 <p>
-                    Silakan pilih lokasi yang sesuai untuk
-                    memperoleh formulir atau informasi pendaftaran.
+                    Pilih lokasi pondok yang dituju untuk membuka
+                    formulir pendaftaran atau menghubungi pengelola.
                 </p>
             </div>
 
             <div class="registration-grid">
 
+                <!-- Pendaftaran Malang -->
                 <article class="registration-card">
                     <div class="registration-number">01</div>
 
@@ -78,7 +110,7 @@
                     <h3>Pendaftaran Santri Malang</h3>
 
                     <p>
-                        Gunakan formulir pendaftaran resmi
+                        Silakan membuka formulir pendaftaran
                         untuk melanjutkan proses pendaftaran
                         santri di lokasi Malang.
                     </p>
@@ -92,6 +124,7 @@
                     </a>
                 </article>
 
+                <!-- Pendaftaran Lampung -->
                 <article class="registration-card">
                     <div class="registration-number">02</div>
 
@@ -102,14 +135,13 @@
                     <h3>Pendaftaran Santri Lampung</h3>
 
                     <p>
-                        Formulir Lampung sebelumnya dilaporkan
-                        tidak dapat diakses. Hubungi pengelola
-                        untuk mendapatkan tautan terbaru dan
-                        informasi pendaftaran.
+                        Untuk mendapatkan formulir pendaftaran
+                        dan informasi penerimaan santri di Lampung,
+                        silakan menghubungi pengelola melalui WhatsApp.
                     </p>
 
                     <a
-                        href="https://api.whatsapp.com/send?phone=6281216805549&text=Assalamualaikum%20Admin%2C%20saya%20ingin%20mendapatkan%20informasi%20formulir%20pendaftaran%20santri%20Pondok%20Utsman%20Lampung."
+                        href="https://wa.me/6281216805549?text=Assalamualaikum%20Admin%2C%20saya%20ingin%20mendapatkan%20informasi%20formulir%20pendaftaran%20santri%20Pondok%20Utsman%20Lampung."
                         class="btn btn-primary"
                         target="_blank"
                         rel="noopener noreferrer">
@@ -119,28 +151,109 @@
 
             </div>
 
+            <!-- Informasi Tambahan -->
             <div class="registration-note">
                 <h3>Perlu Informasi Lebih Lanjut?</h3>
+
                 <p>
-                    Untuk informasi mengenai persyaratan,
-                    jadwal penerimaan, biaya, dan tahapan seleksi,
-                    silakan konfirmasi langsung kepada pengelola.
+                    Informasi mengenai persyaratan pendaftaran,
+                    jadwal penerimaan, biaya pendidikan, dan
+                    tahapan seleksi perlu dikonfirmasi langsung
+                    kepada pengelola Pondok Utsman.
                 </p>
-                <a href="kontak.html" class="registration-text-link">
+
+                <a
+                    href="kontak.html"
+                    class="registration-text-link">
                     Lihat Informasi Kontak →
                 </a>
             </div>
 
         </div>
     </section>
+
 </main>
 
-<footer class="site-footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="container">
-        <p>
-            &copy; <span id="currentYear"></span>
-            Pondok Pesantren Masjid Utsman Bin Affan.
-        </p>
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a
+                    href="../index.html"
+                    aria-label="Pondok Utsman - Beranda">
+                    <span class="brand-icon">
+                        <img
+                            src="../images/images.jpg"
+                            alt="Logo Pondok Utsman"
+                            loading="lazy">
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Pondok Pesantren Masjid Utsman Bin Affan (PPM-UBA)
+                    berikhtiar membangun peradaban Islam melalui
+                    pendidikan, adab, kepemimpinan, kewirausahaan,
+                    dan teknologi digital.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="donasi.html">Donasi</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+
+                <ul>
+                    <li>
+                        <a href="pendaftaran.html">
+                            Pendaftaran Santri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donasi.html">
+                            Informasi Donasi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kontak.html">
+                            Hubungi Kami
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    WhatsApp:
+                    <a
+                        href="https://wa.me/6281216805549"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        +62 812-1680-5549
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Pondok Utsman. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
+
     </div>
 </footer>
 

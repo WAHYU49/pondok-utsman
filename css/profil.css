@@ -3,9 +3,9 @@
    PAGE HERO
 ========================= */
 .page-hero {
-    padding: 65px 0 75px;
-    background: var(--cream);
-    border-bottom: 1px solid var(--border);
+    padding: 80px 0;
+    background: var(--green-900);
+    color: var(--white);
 }
 
 .breadcrumb {
@@ -14,25 +14,29 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 30px;
-    color: var(--muted);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 0.85rem;
 }
 
 .breadcrumb a:hover {
-    color: var(--green-700);
+    color: var(--white);
+}
+
+.page-hero .section-label {
+    color: #c7dfc9;
 }
 
 .page-hero h1 {
     max-width: 750px;
-    margin-bottom: 16px;
-    color: var(--green-900);
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
-    line-height: 1.15;
+    margin: 12px 0;
+    color: var(--white);
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .page-hero p {
     max-width: 650px;
-    color: var(--muted);
+    color: rgba(255, 255, 255, 0.86);
+    line-height: 1.8;
 }
 
 /* =========================
@@ -277,7 +281,7 @@
 
 @media (max-width: 600px) {
     .page-hero {
-        padding: 45px 0 55px;
+        padding: 55px 0;
     }
 
     .vision-grid,
@@ -298,4 +302,5 @@
         min-height: 230px;
     }
 }
+
 
